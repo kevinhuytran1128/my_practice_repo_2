@@ -1,5 +1,7 @@
 name: scp files
-on: [push]
+on:
+  push:
+    branches: [ deploy ]
 jobs:
 
   build:
