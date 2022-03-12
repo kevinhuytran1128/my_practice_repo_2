@@ -17,14 +17,14 @@ class TestSampleMethods(unittest.TestCase):
         self.assertEqual(increment_by_two(-2), 0)
         self.assertEqual(increment_by_two(0), 2)
         self.assertEqual(increment_by_two(3), 5)
-        
-    def increment_by_three(var_to_increment):
+
+    def test_increment_by_three(self):
         """
-        This function increments input by three
-        :param var_to_increment: param to increment
-        :return: incremented variable
+        Test increments
         """
-        return var_to_increment + 3
+        self.assertEqual(increment_by_three(-2), 1)
+        self.assertEqual(increment_by_three(0), 3)
+        self.assertEqual(increment_by_three(3), 6)
 
 if __name__ == '__main__':
     unittest.main()
