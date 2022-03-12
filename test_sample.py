@@ -3,7 +3,7 @@ Test helper functions
 """
 
 import unittest
-from sample import increment_by_two, incremnt_by_three
+from sample import increment_by_two, increment_by_three
 
 class TestSampleMethods(unittest.TestCase):
     """
